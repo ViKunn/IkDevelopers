@@ -1,0 +1,123 @@
+:root{
+    --color-primario: ;
+    --color-secundario: ;
+    --color-secundario: ;
+
+    --color-fondo1: ;
+    --color-fondo2: ;
+
+    --color-boton-contact: linear-gradient(15deg, #460066c4 50%, #2e0aff75 100%);
+    --color-boton-started: #4361ee;
+    --color-barra-navegacion: ;
+
+    --color-texto-titulo: #000000;
+    --color-texto-subtitulo: #000000;
+    --color-texto-parrafo: #000000a6;
+    --color-texto-enlaces: #8666af;
+    --color-texto-boton: #ffffff;
+    --color-texto-btnNavegacion: ;
+
+    --fuente-principal: 'Segoe UI', sans-serif;
+    --fuente-secundaria: 'Verdana', sans-serif;
+    --size-fuente-principal: 40px;
+    --size-fuente-parrafo-principal: 17px;
+    --size-fuente-subtitulo: 24px;
+    --size-boton: 14px;
+
+    --sombras:0 13px 20px #00000017;
+
+
+    --dimension-botones: 10px 20px;
+    
+}
+
+.pantalla-principal{
+    background-color: var(--color-fondo1);
+    color: var(--color-texto-titulo);
+}
+
+body{
+    font-family: var(--fuente-principal);
+}
+
+    /* Estilos y deseño para la barra de navegacion */
+
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--color-barra-navegacion);
+    box-shadow: var(--sombras);
+}
+
+.btnPagPrincipal{
+    color: var(--color-texto-titulo);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.navLinks{
+    display: flex;
+    gap: 55px;
+    margin: 0;
+    padding: 0;
+    font-size: var(--size-botones);
+    font-weight: 500;
+    color: var(--color-texto-parrafo)
+}
+
+.btnContactUs{
+    background: var(--color-boton-contact);
+    color: var(--color-texto-boton);
+    padding: var(--dimension-botones);
+    font-size: var(--size-botones);
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+    /* Seccion de pantalla inicial o bienvenida*/
+.pantalla-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 15% 100px;
+    background-color: var(--color-fondo1);
+    margin: 0 auto;
+}
+
+.degradado-rosa{
+    background: linear-gradient(to right, #d66fb1, #b16fb6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.degradado-morado{
+    background: linear-gradient(to left, #a16eb8, #8666af);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.titulo-principal{
+    font-size: var(--size-fuente-principal);
+    color: var(--color-texto-titulo);
+}
+    
+.parrafo-principal{
+    font-size: var(--size-fuente-parrafo-principal);
+    color: var(--color-texto-parrafo);
+    margin: 20px 0;
+}
+
+.btnStarted{
+    background: var(--color-boton-started); 
+    color: var(--color-texto-boton);
+    padding: 17px 30px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
+    margin: 30px 0;
+    }
