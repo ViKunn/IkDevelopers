@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-primario: ;
     --color-secundario: ;
     --color-secundario: ;
@@ -24,25 +24,25 @@
     --size-fuente-subtitulo: 24px;
     --size-boton: 14px;
 
-    --sombras:0 13px 20px #00000017;
+    --sombras: 0 13px 20px #00000017;
 
 
     --dimension-botones: 10px 20px;
-    
+
 }
 
-.pantalla-principal{
+.pantalla-principal {
     background-color: var(--color-fondo1);
     color: var(--color-texto-titulo);
 }
 
-body{
+body {
     font-family: var(--fuente-principal);
 }
 
-    /* Estilos y deseño para la barra de navegacion */
+/* Estilos y deseño para la barra de navegacion */
 
-.navContainer{
+.navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,13 +51,13 @@ body{
     box-shadow: var(--sombras);
 }
 
-.btnPagPrincipal{
+.btnPagPrincipal {
     color: var(--color-texto-titulo);
     cursor: pointer;
     font-size: 25px;
 }
 
-.navLinks{
+.navLinks {
     display: flex;
     gap: 55px;
     margin: 0;
@@ -67,17 +67,17 @@ body{
     color: var(--color-texto-parrafo)
 }
 
-.btnContactUs{
+.btnContactUs {
     background: var(--color-boton-contact);
     color: var(--color-texto-boton);
     padding: var(--dimension-botones);
     font-size: var(--size-botones);
     border-radius: 5px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-    /* Seccion de pantalla inicial o bienvenida*/
-.pantalla-principal{
+/* Seccion de pantalla inicial o bienvenida*/
+.pantalla-principal {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,38 +86,126 @@ body{
     margin: 0 auto;
 }
 
-.degradado-rosa{
+.degradado-rosa {
     background: linear-gradient(to right, #d66fb1, #b16fb6);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.degradado-morado{
+.degradado-morado {
     background: linear-gradient(to left, #a16eb8, #8666af);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.titulo-principal{
+.titulo-principal {
     font-size: var(--size-fuente-principal);
     color: var(--color-texto-titulo);
 }
-    
-.parrafo-principal{
+
+.parrafo-principal {
     font-size: var(--size-fuente-parrafo-principal);
     color: var(--color-texto-parrafo);
     margin: 20px 0;
 }
 
-.btnStarted{
-    background: var(--color-boton-started); 
+.btnStarted {
+    background: var(--color-boton-started);
     color: var(--color-texto-boton);
     padding: 17px 30px;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
     margin: 30px 0;
-    }
+}
+
+/* Sección Developer 3: Our Design and Devolopment Aproach */
+
+#servicios {
+    background-color: #f5f6fa;
+    padding: 80px 10%;
+}
+
+.seccion3-header {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.seccion3-subtitulo {
+    font-size: 38px;
+    color: #6b6b8d;
+    margin-bottom: 5px;   
+}
+
+.seccion3-titulo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-top: 0;
+}
+
+.seccion3-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+.card-servicio {
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6f0;
+    border-radius: 1px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.card-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card-icono-box {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icono-box img {
+    width: 60%;
+}
+
+.icono1 {background: linear-gradient(135deg, #25242d, #19181d);}
+.icono2 {background: linear-gradient(135deg, #2fa3fc, #65befd, #8ad3fe );}
+.icono3 {background: linear-gradient(135deg, #ff8dad, #ff71a2, #f95c96);}
+.icono4 {background: linear-gradient(135deg, #79f1b9, #3fd0c1, #51dbcb);}
+.icono5 {background: linear-gradient(135deg, #ffe76d, #f9a34a, #f18a32);}
+.icono6 {background: linear-gradient(135deg, #ffc671, #b22d7a, #811e64);}
+
+.card-texto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+.card-texto p {
+    font-size: 14px;
+    color: #6b6b8d;
+    line-height: 1.6;
+}
+
+.ux1 { color: #000000; }  
+.ux2 { color: #62beff; }  
+.ux3 { color: #fe87b1; }  
+.ux4 { color: #69ebdd; }  
+.ux5 { color: #feac4e; }  
+.ux6 { color: #b73981; }  
