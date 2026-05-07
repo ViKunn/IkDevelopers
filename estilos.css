@@ -123,6 +123,130 @@ body {
     margin: 30px 0;
 }
 
+
+/*Seccion 2: Developer*/
+
+#testimonios {
+    position: relative;
+    padding-bottom: 90px;
+    background-color: var(--color-fondo1);
+}
+
+.cabecera-testimonios {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.subtitulo-testimonios {
+    font-size: 38px;
+    color: var(--color-texto-subtitulo);
+    margin-bottom: 5px;
+}
+
+.titulo-testimonios {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--color-texto-titulo);
+    margin-top: 0;
+}
+
+.cita-principal {
+    width: 44%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.7;
+    color: var(--color-texto-subtitulo);
+}
+
+.flecha-control {
+    position: absolute;
+    top: 60%;
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+}
+
+.flecha-izquierda {
+    left: 5%;
+    transform: scaleX(-1);
+}
+
+.flecha-derecha {
+    right: 5%;
+}
+
+/* Tarjetas de clientes */
+.carrusel-clientes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 35px;
+}
+
+.tarjeta-cliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.foto-cliente {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.estrellas {
+    color: #ffc107;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.datos-cliente {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nombre-cliente {
+    font-size: 15px;
+    color: #888888;
+}
+
+.cargo-cliente {
+    font-size: 13px;
+    color: #b0b0b0;
+}
+
+.perfil-destacado {
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.perfil-destacado .foto-cliente {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.perfil-destacado .nombre-cliente {
+    color: #4a148c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.perfil-destacado .cargo-cliente {
+    color: #333333;
+    font-weight: 600;
+}
+
+
 /* Sección Developer 3: Our Design and Devolopment Aproach */
 
 .seccion {
